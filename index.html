@@ -101,7 +101,6 @@
         <button class="tablink" onclick="openPage('event1', this, '#edd9ec')" id="defaultOpen">Actividades en prácticas</button>
     
         <div id="event1" class="tabcontent" >
-            <center></center>
             <video width=70% controls>
                 <source src="videos/video1.mp4" type="video/mp4" width="350" height="400">
             </video>
@@ -132,6 +131,25 @@
 
             <br>
         </div>  
+
+        <script>
+             function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
 
     </body>
 
