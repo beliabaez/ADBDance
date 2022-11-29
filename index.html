@@ -52,6 +52,39 @@
             body {
             background-color: #efdccc;
             }
+
+            /* Style tab links */
+        .tablink {
+            background-color: #d1b7a1;
+            color: black;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 20%;
+        }
+
+        .tablink:hover {
+            background-color: #f2e5d9;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
+        #event1 {
+            background-color: rgb(255, 209, 180);
+        }
+
+        div.center {
+            text-align: center;
+            }
         </style>
     </head>
 
@@ -67,7 +100,8 @@
 
         <button class="tablink" onclick="openPage('event1', this, '#edd9ec')" id="defaultOpen">Actividades en prácticas</button>
     
-        <div id="event1" class="tabcontent">
+        <div id="event1" class="tabcontent center" >
+            <center></center>
             <video width=70% controls>
                 <source src="videos/video1.mp4" type="video/mp4" width="350" height="400">
             </video>
