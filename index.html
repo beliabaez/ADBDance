@@ -78,8 +78,10 @@
             height: 100%;
         }
 
-        #event1 {
-            background-color: rgb(255, 209, 180);
+        #event1,
+        #event2,
+        #event3 {
+            background-color: #e9a77b;
         }
 
         div.center {
@@ -98,7 +100,9 @@
 
         </header>
 
-        <button class="tablink" onclick="openPage('event1', this, '#edd9ec')" id="defaultOpen">Actividades en prácticas</button>
+        <button class="tablink" onclick="openPage('event1', this, '#e9d3c0')" id="defaultOpen">Actividades en Prácticas</button>
+        <button class="tablink" onclick="openPage('event2', this, '#e9d3c0')" id="defaultOpen">Actividades de Clase</button>
+        <button class="tablink" onclick="openPage('event3', this, '#e9d3c0')" id="defaultOpen">Música en Baja California</button>
     
         <div id="event1" class="tabcontent" >
             <div class="center">
@@ -140,6 +144,32 @@
             </div>
            
         </div>  
+
+        <div id="event2" class="tabcontent">
+            <h1 style="color: black;"><strong>Rondas</strong></h1>
+            <p style="color: black; font-size:large;"> 
+                texto de actividad
+           
+                <iframe width=100% height = 800px style="border:none;" src="https://docs.google.com/document/d/e/2PACX-1vTKwSnzrwqzBNYkLhXkIpXmqqgOdZbBhRf_7SXjUS3XNShKKXUqGnR1K6HOa4oaW9ACHBd7KgjXbLuq/pub?embedded=true"></iframe> 
+            </p>
+
+            <h1 style="color: black;"><strong> Aros Musicales </strong></h1>
+            <p style="color: black; font-size:large;"> texto de actividad
+            </p>
+            <img src="aros/1.jpg" style="width:100%"> <br>
+            
+            
+            <img src="aros/2.jpg" style="width:100%"> <br>
+            
+            <img src="aros/3.jpg" style="width:100%"> <br>
+             
+            <br>
+
+            <h1 style="color: black;"><strong> Campanero expresión corporal con percursiones</strong></h1>
+            
+            <iframe src="https://drive.google.com/file/d/1suVZeBtlMXrb4n39aOLNn-zLsLoWSo0L/preview" width="640" height="480" allow="autoplay"></iframe>
+
+        </div>
 
         <script>
              function openPage(pageName, elmnt, color) {
